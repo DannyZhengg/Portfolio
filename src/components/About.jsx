@@ -15,7 +15,7 @@ function About() {
         <h2>About Me</h2>
         <p>
           Hey! I'm Danny Zheng, Freshman studying Comp Sci & Math @ Yale.
-          I like to play badminton, table tennis, taking photos, eating food.
+          I like to play badminton, table tennis, take photos, eating food.
         </p>
       </div>
 
@@ -26,12 +26,13 @@ function About() {
       </div>
 
       <div className="experiences-awards">
-        <h3>Experiences & Awards</h3>
+        <h3>Experiences/Awards</h3>
         <ul>
-          <li>VEX Robotics Programmer | 2023 - Present</li>
-          <li>Yale Computer Science Summer Camp | Summer 2023</li>
-          <li>1st Place - CT State VEX Robotics Championship | 2024</li>
-          <li>Dean's List - Greenwich High School | 2022-2023</li>
+          <li>Amazon Future Engineer</li>
+          <li>Catalyst Developer</li>
+          <li>C. Prescott Davis Scholar</li>
+          <li>J. McMullen Dean's Scholar</li>
+          <li>Vex Robotics 9909B lead programmer</li>
         </ul>
       </div>
     </section>
