@@ -1,10 +1,12 @@
 import "./About.css";
 
 function About() {
-  const images = Array.from(
-    { length: 20 },
-    (_, i) => `/about-gallery/pic${i + 1}.jpg`
-  );
+  const base = import.meta.env.BASE_URL;
+
+const images = Array.from(
+  { length: 20 },
+  (_, i) => `${base}about-gallery/pic${i + 1}.jpg`
+);
 
   return (
     <section id="about" className="about">
