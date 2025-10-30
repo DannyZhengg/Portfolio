@@ -1,8 +1,13 @@
 import "./About.css";
 
 function About() {
-  const base = import.meta.env.BASE_URL; // this ensures correct path on GitHub Pages
-  const images = Array.from({ length: 20 }, (_, i) => `${base}about-gallery/pic${i + 1}.jpg`);
+  const base = import.meta.env.BASE_URL;
+  const images = [
+    "pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg",
+    "pic6.jpg","pic7.jpg","pic8.jpg","pic9.jpg","pic10.jpg",
+    "pic11.jpg","pic12.jpg","pic13.jpg","pic14.jpg","pic15.jpg",
+    "pic16.jpg","pic17.jpg","pic18.jpg","pic19.jpg","pic20.jpg"
+  ].map(name => `${base}about-gallery/${name}`);
 
   return (
     <section id="about" className="about">
