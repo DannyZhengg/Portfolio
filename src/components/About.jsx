@@ -1,13 +1,8 @@
 import "./About.css";
 
 function About() {
-  // Use import.meta.env.BASE_URL so it works on GitHub Pages
-  const base = import.meta.env.BASE_URL;
-
-  const images = Array.from(
-    { length: 20 },
-    (_, i) => `${base}about-gallery/pic${i + 1}.jpg`
-  );
+  const base = import.meta.env.BASE_URL; // this ensures correct path on GitHub Pages
+  const images = Array.from({ length: 20 }, (_, i) => `${base}about-gallery/pic${i + 1}.jpg`);
 
   return (
     <section id="about" className="about">
