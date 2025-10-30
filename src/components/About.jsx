@@ -15,7 +15,7 @@ function About() {
         <h2>About Me</h2>
         <p>
           Hey! I'm Danny Zheng, Freshman studying Comp Sci & Math @ Yale.
-          I like to play badminton, table tennis, take photos, eating food.
+          I like playing racket sports, traveling, taking photos, and eating food.
         </p>
       </div>
 
