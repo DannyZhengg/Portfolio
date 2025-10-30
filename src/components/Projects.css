@@ -1,0 +1,31 @@
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--bg-color);
+  padding: 2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-card {
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
