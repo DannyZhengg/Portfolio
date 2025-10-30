@@ -24,6 +24,16 @@ function About() {
           <img key={idx} src={src} alt={`pic-${idx + 1}`} className="about-img" />
         ))}
       </div>
+
+      <div className="experiences-awards">
+        <h3>Experiences & Awards</h3>
+        <ul>
+          <li>VEX Robotics Programmer | 2023 - Present</li>
+          <li>Yale Computer Science Summer Camp | Summer 2023</li>
+          <li>1st Place - CT State VEX Robotics Championship | 2024</li>
+          <li>Dean's List - Greenwich High School | 2022-2023</li>
+        </ul>
+      </div>
     </section>
   );
 }
