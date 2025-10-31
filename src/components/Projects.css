@@ -2,18 +2,22 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center;        /* horizontal centering */
+  justify-content: center;    /* vertical centering */
+  padding: 2rem;
   gap: 2rem;
   background-color: var(--bg-color);
-  padding: 2rem;
+  text-align: center;
+  scroll-margin-top: 80px;    /* accounts for fixed navbar */
 }
 
 .project-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;            /* wrap cards on smaller screens */
+  justify-content: center;    /* center horizontally */
   gap: 2rem;
-  align-items: center;
+  width: 100%;
+  max-width: 1200px;          /* prevents stretching on large screens */
 }
 
 .project-card {
@@ -22,10 +26,34 @@
   border-radius: 12px;
   text-decoration: none;
   color: var(--text-color);
-  width: 300px;
-  transition: transform 0.3s;
+  width: 300px;               /* default card width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .project-card {
+    width: 45%;   /* 2 cards per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .projects {
+    padding: 1rem;
+  }
+
+  .project-card {
+    width: 90%;   /* full width for small screens */
+    padding: 1.5rem;
+  }
+
+  .project-list {
+    gap: 1rem;
+  }
 }

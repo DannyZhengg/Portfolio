@@ -2,50 +2,53 @@
   position: relative;
   width: 100%;
   min-height: 60vh;
-  overflow: hidden;
   background: var(--bg-color);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0; 
+  padding: 4rem 2rem;
   scroll-margin-top: 80px;
+  gap: 2rem;
 }
+
 .about-content {
   text-align: center;
   max-width: 600px;
-  margin-bottom: 2rem;
-}
-
-.experiences-awards {
-  text-align: left;
-  max-width: 600px;
-  margin: 0 0 2rem 0;
-  align-self: flex-start;
 }
 
 .about-gallery {
   display: flex;
-  gap: 15px;
-  width: max-content; 
-  animation: scrollGallery 30s linear infinite;
-  opacity: 1;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
 }
 
 .about-img {
-  height: 35vh;    
-  width: 250px;      
+  height: 35vh;
+  width: 20vw;
+  min-width: 200px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
 }
 
-@keyframes scrollGallery {
-  0% {
-    transform: translateX(0);
+.experiences-awards {
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-gallery {
+    flex-wrap: nowrap;
+    gap: 10px;
   }
-  100% {
-    transform: translateX(-50%);
+  .about-img {
+    width: 80vw;
+    height: auto;
   }
 }
